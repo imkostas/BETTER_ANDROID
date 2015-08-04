@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/dailyBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/ranking_button_height"
+            android:text="@string/ranking_leader_board_daily"
+            android:textSize="@dimen/ranking_leader_board_text_size"
+            android:textColor="@color/color_almost_black"
+            android:background="@color/color_clear"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/weeklyBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/ranking_button_height"
+            android:text="@string/ranking_leader_board_weekly"
+            android:textSize="@dimen/ranking_leader_board_text_size"
+            android:textColor="@color/color_almost_black"
+            android:background="@color/color_clear"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/allTimeBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/ranking_button_height"
+            android:text="@string/ranking_leader_board_all_time"
+            android:textSize="@dimen/ranking_leader_board_text_size"
+            android:textColor="@color/color_almost_black"
+            android:background="@color/color_clear"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/rankingListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/activity_padding_half"
+        android:listSelector="@color/color_clear"
+        android:cacheColorHint="@color/color_clear"/>
+
+</LinearLayout>

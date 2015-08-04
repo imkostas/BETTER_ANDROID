@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="countries_array">
+        <item>UNITED STATES OF AMERICA</item>
+    </string-array>
+
+    <string-array name="badge_array">
+        <item>Admirer</item>
+        <item>Adventurer</item>
+        <item>Celebrity</item>
+        <item>Idol</item>
+        <item>Role Model</item>
+        <item>Tastemaker</item>
+    </string-array>
+
+    <string-array name="tag_array">
+        <item>firstdate</item>
+        <item>beauty</item>
+        <item>splurge</item>
+        <item>romantic</item>
+        <item>classic</item>
+        <item>partytime</item>
+        <item>hair</item>
+        <item>trend</item>
+        <item>cute</item>
+        <item>workplace</item>
+        <item>everyday</item>
+        <item>easystyle</item>
+        <item>firstdate</item>
+        <item>hairstyles</item>
+        <item>bold</item>
+    </string-array>
+</resources>

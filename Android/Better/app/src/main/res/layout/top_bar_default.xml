@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_bar_height">
+
+    <ImageView
+        android:id="@+id/topBarBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/color_better_dark"/>
+
+    <TextView
+        android:id="@+id/topBarTitle"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_padding"
+        android:text="Top Bar Title"
+        android:textSize="@dimen/top_bar_text_size"
+        android:textColor="@color/color_white"
+        android:drawableLeft="@drawable/ic_arrow_back_green_24dp"
+        android:drawablePadding="@dimen/activity_padding_double"
+        android:clickable="true"/>
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <ImageView
+        android:id="@+id/badgeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_margin_quarter"
+        android:src="@drawable/badge_gold_tastemaker_80dp"/>
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tastemaker"
+        android:textSize="@dimen/badge_title_text_size"
+        android:textColor="@color/color_almost_black"/>
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GOLD"
+        android:textSize="@dimen/badge_status_text_size"
+        android:textColor="@color/color_almost_black"/>
+
+</LinearLayout>

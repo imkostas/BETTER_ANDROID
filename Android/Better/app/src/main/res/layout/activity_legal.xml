@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical"
+    android:layout_gravity="top"
+    tools:context="com.astapley.thememe.better.LegalActivity">
+
+    <include layout="@layout/top_bar_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/color_gray_tab">
+
+            <TextView
+                android:id="@+id/termsOfServiceTextView"
+                android:text="@string/terms_of_service_text"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/activity_padding_quarter"
+                android:drawableTop="@drawable/terms_legal_icon_dk_grey"
+                android:drawablePadding="@dimen/activity_padding_quarter"
+                android:background="@color/color_light_light_gray"
+                android:clickable="true"/>
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/privacyPolicyTextView"
+                android:text="@string/privacy_policy_text"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/activity_padding_quarter"
+                android:drawableTop="@drawable/terms_legal_icon_dk_grey"
+                android:drawablePadding="@dimen/activity_padding_quarter"
+                android:background="@color/color_light_light_gray"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+

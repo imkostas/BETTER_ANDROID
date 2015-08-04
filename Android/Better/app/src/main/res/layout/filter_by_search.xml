@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.astapley.thememe.better.FilterBySearch"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:orientation="horizontal"
+        android:background="@color/color_better_dark">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_padding"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:clickable="true"/>
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/search_hint"
+            android:textColorHint="@color/color_white"
+            android:textColor="@color/color_white"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:background="@color/color_clear"
+            android:imeOptions="actionDone"/>
+
+        <ImageView
+            android:id="@+id/clearBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_padding"
+            android:src="@drawable/ic_close_white_24dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/tagsBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:text="@string/filter_tags"
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@color/color_clear"/>
+
+        <Button
+            android:id="@+id/usersBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:text="@string/filter_users"
+            android:textSize="14dp"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@color/color_clear"/>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/tagsListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@color/color_clear"
+                android:cacheColorHint="@color/color_clear"/>
+
+            <ListView
+                android:id="@+id/usersListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@color/color_clear"
+                android:cacheColorHint="@color/color_clear"/>
+
+        </FrameLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

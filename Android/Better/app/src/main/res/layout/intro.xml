@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/initial_bg"
+    tools:context=".Intro">
+
+    <ImageView
+        android:id="@+id/backgroundImageReplacement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_black"
+        android:scaleType="centerCrop"
+        android:src="@drawable/initial_tutorial_shoes_spot"/>
+
+    <ImageView
+        android:id="@+id/backgroundImageActual"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_black"
+        android:scaleType="centerCrop"
+        android:src="@drawable/initial_tutorial_shoes_dark"/>
+
+    <ImageView
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/initial_back_panel"
+        android:alpha="0.9"/>
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include layout="@layout/view_pager_indicators"/>
+
+    <Button
+        android:id="@+id/getStartedButton"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/intro_get_started_text"
+        android:textSize="@dimen/button_text_size"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@color/color_better"/>
+
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/initial_bg"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_gravity="bottom|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="268dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/initial_app_logo"/>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

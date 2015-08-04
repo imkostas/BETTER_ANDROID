@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_better_dark">
+
+    <FrameLayout
+        android:id="@+id/updateFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/new_account_background_image_size"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/backgroundProfileImageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/new_account_background_image_size"
+            android:scaleType="centerCrop"
+            android:src="@drawable/account_profile_panel_empty"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/updateImageView"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center|start"
+            android:layout_width="@dimen/new_account_profile_image_size"
+            android:layout_height="@dimen/new_account_profile_image_size"
+            android:layout_marginLeft="@dimen/activity_margin"
+            android:layout_marginStart="@dimen/activity_margin"
+            android:src="@drawable/ic_cam_account_white_116dp"
+            android:background="@drawable/ic_cam_circle_account_116dp"
+            app:border_width="0dp"/>
+
+    </FrameLayout>
+
+    <com.astapley.thememe.better.NotifyingScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/notifyingScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/new_account_background_image_size">
+
+                <View
+                    android:id="@+id/takePhotoView"
+                    android:layout_width="@dimen/new_account_profile_image_size"
+                    android:layout_height="@dimen/new_account_profile_image_size"
+                    android:layout_gravity="center|start"
+                    android:layout_marginLeft="@dimen/activity_margin"
+                    android:layout_marginTop="@dimen/activity_margin_half"
+                    android:clickable="true"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/new_account_background_image_size"
+                android:paddingTop="@dimen/activity_padding_half"
+                android:background="@color/color_white">
+
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    android:gravity="center|start"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:paddingLeft="@dimen/activity_padding"
+                    android:paddingRight="@dimen/activity_padding"
+                    android:layout_marginBottom="@dimen/activity_margin_half"
+                    android:drawableLeft="@drawable/ic_account_circle_grey600_24dp"
+                    android:drawableStart="@drawable/ic_account_circle_grey600_24dp"
+                    android:drawablePadding="@dimen/new_account_icon_text_margin"
+                    android:text="USERNAME"
+                    android:textSize="@dimen/new_account_normal_text_size"
+                    android:textColor="@color/color_almost_black"
+                    android:background="@color/color_clear"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/color_light_gray_divider"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_padding">
+
+                    <TextView
+                        android:id="@+id/IAM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/IAM"
+                        android:textSize="@dimen/new_account_empty_text_size"
+                        android:textColor="@color/color_gray"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/activity_padding_half"
+                        android:layout_marginBottom="@dimen/activity_margin">
+
+                        <ImageView
+                            android:id="@+id/femaleImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/activity_margin_half"
+                            android:layout_marginEnd="@dimen/activity_margin_half"
+                            android:src="@drawable/account_button_female_125dp"
+                            android:clickable="true"/>
+
+                        <ImageView
+                            android:id="@+id/maleImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_margin_half"
+                            android:layout_marginStart="@dimen/activity_margin_half"
+                            android:src="@drawable/account_button_male_125dp"
+                            android:clickable="true"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/activity_margin_half"
+                    android:background="@color/color_light_gray_divider"/>
+
+                <TextView
+                    android:id="@+id/birthdayTextView"
+                    android:gravity="center|start"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:paddingLeft="@dimen/activity_padding"
+                    android:paddingRight="@dimen/activity_padding"
+                    android:layout_marginBottom="@dimen/activity_margin_half"
+                    android:drawableLeft="@drawable/ic_event_note_grey600_24dp"
+                    android:drawablePadding="@dimen/new_account_icon_text_margin"
+                    android:text="@string/hint_dob"
+                    android:textSize="@dimen/new_account_normal_text_size"
+                    android:textColor="@color/color_almost_black"
+                    android:clickable="true"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="104dp">
+
+                    <TextView
+                        android:id="@+id/countryTextView"
+                        android:gravity="center|start"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:paddingLeft="@dimen/activity_padding"
+                        android:paddingRight="@dimen/activity_padding"
+                        android:drawableLeft="@drawable/ic_flag_grey600_24dp"
+                        android:drawablePadding="@dimen/new_account_icon_text_margin"
+                        android:text="@string/hint_country"
+                        android:textSize="@dimen/new_account_normal_text_size"
+                        android:textColor="@color/color_almost_black"
+                        android:clickable="true"/>
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_marginLeft="56dp"
+                        android:layout_marginStart="56dp"
+                        android:background="@color/color_clear"/>
+
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/updateAccountButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:text="@string/profile_update_my_account"
+                    android:textSize="@dimen/button_text_size"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@color/color_better"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </com.astapley.thememe.better.NotifyingScrollView>
+
+    <include layout="@layout/top_bar_default"/>
+
+</FrameLayout>

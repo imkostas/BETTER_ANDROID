@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_view_follow_height"
+    android:background="@color/color_white">
+
+    <TextView
+        android:id="@+id/notificationTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:layout_marginStart="@dimen/activity_margin"
+        android:text="notification setting here"
+        android:textColor="@color/color_almost_black"
+        android:textSize="@dimen/list_view_follow_text_size"/>
+
+    <ImageView
+        android:id="@+id/actionImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_padding"
+        android:src="@drawable/ic_switch_off_38x32dp"/>
+
+</LinearLayout>

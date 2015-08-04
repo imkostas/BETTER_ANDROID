@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addTagLinearLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/addTagView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:alpha="0.7"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_padding"
+                android:paddingRight="2dp"
+                android:text="#"/>
+
+            <EditText
+                android:id="@+id/hashtagEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/activity_padding"
+                android:paddingBottom="@dimen/activity_padding"
+                android:hint="hashtag"
+                android:maxLength="20"
+                android:background="@color/color_clear"/>
+
+            <ImageView
+                android:id="@+id/setTagImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_padding"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:background="@color/color_gray"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

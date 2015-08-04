@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/initial_bg">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sign_up_logo_top_margin"
+        android:layout_marginBottom="@dimen/activity_margin_double"
+        android:src="@drawable/initial_app_logo"/>
+
+    <com.facebook.widget.LoginButton
+        xmlns:fb="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/authButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="@dimen/activity_margin_half"
+        fb:login_text="@string/sign_up_facebook"
+        fb:logout_text="@string/connected_to_facebook"
+        style="@style/FacebookLoginButton"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/activity_margin"
+            android:background="@color/color_gray"/>
+
+        <TextView
+            android:id="@+id/orTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in_or_text"
+            android:textColor="@color/color_gray"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/activity_margin"
+            android:background="@color/color_gray"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/emailBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/activity_margin_half"
+        android:text="@string/sign_up_email"
+        android:textSize="@dimen/button_text_size"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@color/color_better"/>
+
+    <LinearLayout
+        android:id="@+id/logInLayout"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/haveAccountTextView"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/activity_margin_half"
+            android:layout_marginEnd="@dimen/activity_margin_half"
+            android:text="@string/sign_up_already_have_account"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/log_in_forgot_text_size"/>
+
+        <TextView
+            android:id="@+id/logInTextView"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/sign_up_log_in"
+            android:textColor="@color/color_better"
+            android:textSize="@dimen/log_in_forgot_text_size"/>
+
+    </LinearLayout>
+
+</LinearLayout>

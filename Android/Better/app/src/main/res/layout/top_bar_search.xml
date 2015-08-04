@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_bar_height"
+    android:background="@color/color_better_dark">
+
+    <LinearLayout
+        android:id="@+id/searchTopBarLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_padding"
+            android:paddingBottom="@dimen/activity_padding"
+            android:paddingLeft="@dimen/activity_padding"
+            android:paddingStart="@dimen/activity_padding"
+            android:paddingRight="0dp"
+            android:paddingEnd="0dp"
+            android:src="@drawable/ic_arrow_back_green_24dp"
+            android:clickable="true"/>
+
+        <View
+            android:layout_width="42dp"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:inputType="textNoSuggestions"
+            android:hint="@string/search_hint"
+            android:textColorHint="@color/color_white"
+            android:textColor="@color/color_white"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:background="@color/color_clear"
+            android:imeOptions="actionDone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/searchView"
+            android:layout_width="36dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/searchImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_padding"
+            android:src="@drawable/ic_search_white_24dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+</FrameLayout>

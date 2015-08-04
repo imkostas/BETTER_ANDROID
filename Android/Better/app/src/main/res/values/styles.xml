@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/initial_bg</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:background">@color/color_facebook</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/color_better</item>
+    </style>
+
+    <style name="Style.Spinner" parent="android:style/Widget.ListView.DropDown">
+        <item name="android:divider">@color/color_almost_black</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:textColor">@color/color_almost_black</item>
+    </style>
+
+</resources>

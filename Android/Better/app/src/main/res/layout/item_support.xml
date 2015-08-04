@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/filler8top"
+            android:src="@drawable/rectangle8dp"
+            android:layout_width="8dp"
+            android:layout_height="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/support_cell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left">
+
+
+
+                    <TextView
+                        android:id="@+id/support_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Someone votes on my post"
+                        android:textColor="@color/color_black"
+                        android:textSize="15dp"
+                        android:layout_gravity="center|left"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/support_next"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_chevron_right_grey600_24dp"
+                    android:layout_gravity="center|end"/>
+
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/support_item_line"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:paddingLeft="@dimen/profile_item_line_paddingLeft"
+            android:paddingRight="@dimen/profile_item_line_paddingRight"
+            android:src="@color/color_light_gray_divider"/>
+
+    </LinearLayout>
+
+</FrameLayout>

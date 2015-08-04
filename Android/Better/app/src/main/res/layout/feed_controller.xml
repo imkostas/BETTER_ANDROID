@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.astapley.thememe.better.FeedController"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light_light_gray">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/top_bar_multi" />
+
+            <FrameLayout
+                android:id="@+id/feed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/top_bar_height"/>
+
+            <ImageView
+                android:id="@+id/cameraImageView"
+                android:layout_gravity="bottom|end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_margin"
+                android:src="@drawable/feed_button_takepic_56dp"
+                android:clickable="true"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/left_navigation_drawer"
+            android:layout_width="@dimen/nav_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"/>
+
+        <FrameLayout
+            android:id="@+id/right_navigation_drawer"
+            android:layout_gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_black"
+            android:alpha="0.7"/>
+
+    </FrameLayout>
+
+</FrameLayout>

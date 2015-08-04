@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <include layout="@layout/top_bar_search" />
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/activity_padding_half">
+
+            <TextView
+                android:id="@+id/everythingTextView"
+                android:gravity="center|start"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_edit_height"
+                android:text="@string/filter_everything"
+                android:textSize="@dimen/menu_text_size"
+                android:textColor="@color/color_almost_black"
+                android:drawableLeft="@drawable/ic_everythingfeed_grey_24dp"
+                android:drawableStart="@drawable/ic_everythingfeed_grey_24dp"
+                android:drawablePadding="@dimen/activity_padding_double"
+                android:paddingLeft="@dimen/activity_padding"
+                android:paddingRight="@dimen/activity_padding"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/favoriteHashtagsTextView"
+                android:gravity="center|start"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_edit_height"
+                android:text="@string/filter_favorite_tags"
+                android:textSize="@dimen/menu_text_size"
+                android:textColor="@color/color_almost_black"
+                android:drawableLeft="@drawable/ic_favorite_grey_24dp"
+                android:drawableStart="@drawable/ic_favorite_grey_24dp"
+                android:drawablePadding="@dimen/activity_padding_double"
+                android:paddingLeft="@dimen/activity_padding"
+                android:paddingRight="@dimen/activity_padding"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/followingTextView"
+                android:gravity="center|start"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_edit_height"
+                android:text="@string/filter_following"
+                android:textSize="@dimen/menu_text_size"
+                android:textColor="@color/color_almost_black"
+                android:drawableLeft="@drawable/ic_person_add_grey_24dp"
+                android:drawableStart="@drawable/ic_person_add_grey_24dp"
+                android:drawablePadding="@dimen/activity_padding_double"
+                android:paddingLeft="@dimen/activity_padding"
+                android:paddingRight="@dimen/activity_padding"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/trendingTextView"
+                android:gravity="center|start"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_edit_height"
+                android:text="@string/filter_trending"
+                android:textSize="@dimen/menu_text_size"
+                android:textColor="@color/color_almost_black"
+                android:drawableLeft="@drawable/ic_trending_up_grey600_24dp"
+                android:drawableStart="@drawable/ic_trending_up_grey600_24dp"
+                android:drawablePadding="@dimen/activity_padding_double"
+                android:paddingLeft="@dimen/activity_padding"
+                android:paddingRight="@dimen/activity_padding"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/searchLinearLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/color_white">
+
+                <TextView
+                    android:id="@+id/hashtagsTextView"
+                    android:text="TAGS"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/ranking_button_height"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/ranking_leader_board_text_size"
+                    android:background="@color/color_better_dark"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/usersTextView"
+                    android:text="USERS"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/ranking_button_height"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/ranking_leader_board_text_size"
+                    android:background="@color/color_better_dark"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/indicatorImageView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@color/color_green_line"
+                android:background="@color/color_better_dark"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/color_white"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

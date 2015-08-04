@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_padding_double"
+    android:paddingLeft="@dimen/activity_padding"
+    android:paddingStart="@dimen/activity_padding"
+    android:paddingRight="@dimen/activity_padding_half"
+    android:paddingEnd="@dimen/activity_padding_half">
+
+    <TextView
+        android:id="@+id/hashTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#"
+        android:textColor="@color/color_gray_default"
+        android:textSize="@dimen/list_view_favorite_text_size"/>
+
+    <TextView
+        android:id="@+id/tagTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="wedding"
+        android:textColor="@color/color_almost_black"
+        android:textSize="@dimen/list_view_favorite_text_size"/>
+
+</LinearLayout>

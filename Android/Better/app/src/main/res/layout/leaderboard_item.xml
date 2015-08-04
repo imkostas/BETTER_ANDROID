@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center|start"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_view_follow_height"
+    android:paddingLeft="@dimen/activity_padding"
+    android:paddingRight="@dimen/activity_padding"
+    android:background="@color/color_white">
+
+    <TextView
+        android:id="@+id/rankTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_margin_half"
+        android:layout_marginEnd="@dimen/activity_margin_half"
+        android:text="1."
+        android:textColor="@color/color_almost_black"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImageView"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/list_view_follow_icon_size"
+        android:layout_height="@dimen/list_view_follow_icon_size"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:layout_marginEnd="@dimen/activity_margin"
+        android:src="@drawable/feed_button_profile_default_f_40dp"
+        app:border_width="0dp"/>
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_margin_half"
+        android:layout_marginEnd="@dimen/activity_margin_half"
+        android:text="USERNAMEHERE"
+        android:textColor="@color/color_almost_black"
+        android:textSize="@dimen/list_view_follow_text_size"/>
+
+    <ImageView
+        android:id="@+id/rankImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_rank_trendsetter_grey_24dp"/>
+
+    <TextView
+        android:id="@+id/pointsTextView"
+        android:gravity="end"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="3,525"
+        android:textColor="@color/color_almost_black"
+        android:textSize="@dimen/list_view_follow_text_size"/>
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<resources>
+    <!-- APP -->
+    <string name="app_name">Better</string>
+    <string name="better_slogan">The Beauty Choice</string>
+
+    <!-- API -->
+    <string name="api_uri">http://52.0.107.49/v1/</string>
+    <string name="api_key">better</string>
+
+    <!-- S3 -->
+    <string name="s3_uri">https://s3.amazonaws.com/better.thememedesign.com/</string>
+    <string name="s3_bucket_name">better.thememedesign.com</string>
+
+    <!-- Facebook -->
+    <string name="facebook_app_id">1678223995738112</string>
+    <string name="facebook_graph_uri">https://graph.facebook.com/</string>
+    <string name="sign_up_facebook">SIGN UP WITH FACEBOOK</string>
+    <string name="connected_to_facebook">CONNECTED TO FACEBOOK</string>
+    <string name="log_in_with_facebook">LOG IN WITH FACEBOOK</string>
+
+    <!-- Alerts -->
+    <string name="alert_which_is_better">Which is better?</string>
+    <string name="alert_which_is_better_message">Help others curate their look by voting on the better choice. Tap a spotlight to vote.</string>
+    <string name="alert_delete_this_tag">Delete this tag?</string>
+    <string name="alert_new_account_more_info">You need to provide all the information before proceeding</string>
+    <string name="alert_new_account_general">We were unable to create your account</string>
+    <string name="alert_log_in_general">We could not log you in</string>
+    <string name="alert_log_in_more_info">Missing username or password</string>
+    <string name="alert_log_in_facebook_failed">We were unable to log you in using Facebook</string>
+    <string name="alert_got_it">GOT IT</string>
+    <string name="alert_try_again">TRY AGAIN</string>
+    <string name="alert_cancel">CANCEL</string>
+    <string name="alert_delete">DELETE</string>
+    <string name="title_activity_feed">Feed Activity</string>
+    <string name="alert_logout">Are you sure you want to log out?</string>
+    <string name="alert_yes">YES</string>
+    <string name="alert_no">NO</string>
+    <string name="alert_quit">QUIT</string>
+
+    <!-- Intro -->
+    <string name="intro_welcome_subtext1">Help each other become the</string>
+    <string name="intro_welcome_subtext2">best version of yourselves,</string>
+    <string name="intro_welcome_subtext3">one day at a time.</string>
+    <string name="intro_cast_your_vote_title">Cast Your Vote</string>
+    <string name="intro_cast_your_vote_subtext1">Simply tap to vote for the</string>
+    <string name="intro_cast_your_vote_subtext2">better beauty choice.</string>
+    <string name="intro_make_better_decisions_title">Make Better Decisions</string>
+    <string name="intro_make_better_decisions_subtext1">Post your own style questions</string>
+    <string name="intro_make_better_decisions_subtext2">and get immediate feedback.</string>
+    <string name="intro_rise_in_the_ranks_title">Rise in the Ranks</string>
+    <string name="intro_rise_in_the_ranks_subtext1">Rise in the ranks to get</string>
+    <string name="intro_rise_in_the_ranks_subtext2">crowned as a beauty icon.</string>
+    <string name="intro_get_started_text">GET STARTED</string>
+
+    <!-- Sign up -->
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="sign_up_email">SIGN UP WITH EMAIL</string>
+    <string name="sign_up_already_have_account">Already have an account?</string>
+    <string name="sign_up_log_in">LOG IN</string>
+
+    <!-- Forgot password -->
+    <string name="title_activity_forgot_password">Forgot Password</string>
+    <string name="hint_forgot_password">EMAIL TO RESET PASSWORD</string>
+    <string name="forgot_password_submit">SUBMIT</string>
+
+    <!-- New Account -->
+    <string name="new_account_title">New Account</string>
+    <string name="new_account_status">NEWBIE</string>
+    <string name="create_my_account">CREATE MY ACCOUNT</string>
+    <string name="hint_username">USERNAME</string>
+    <string name="hint_password">PASSWORD</string>
+    <string name="hint_email">EMAIL</string>
+    <string name="hint_dob">DATE OF BIRTH</string>
+    <string name="hint_country">COUNTRY</string>
+    <string name="IAM">I am a&#8230;</string>
+
+    <!-- Log In -->
+    <string name="log_in_forgot_password_text">Forgot your password?</string>
+    <string name="log_in_or_text">OR</string>
+    <string name="log_in_text">LOG IN</string>
+
+    <!-- Post -->
+    <string name="post_title">Post</string>
+    <string name="post_next">NEXT</string>
+    <string name="post_hot_spot_text1">Drag spotlights to desired</string>
+    <string name="post_hot_spot_text2">positions and double tap to tag.</string>
+    <string name="post_tagging_text">TO GET MORE RELIABLE ADVICE, ADD TAGS FOR CONTEXT OR CREATE YOUR OWN.</string>
+    <string name="post_tagging_limit_text">Tags are limited to 20 characters</string>
+    <string name="post_tagging_action_text">TAP TO ADD TAGS</string>
+    <string name="post_tagging_max_text">YOU HAVE REACHED THE MAX # OF TAGS.</string>
+    <string name="post_text">POST YOUR QUESTION</string>
+    <string name="post_quit_alert">Are you sure you want to quit the posting process?</string>
+    <string name="post_missing_image_single_layout">Please add an image to continue the post in this layout</string>
+    <string name="post_missing_image_multi_layout">Please add the image(s) to continue the post in this layout</string>
+    <string name="post_hotspots_overlap">Please make sure your hotspots do not overlap.</string>
+    <string name="post_hotspots_same_tag">We have noticed that you entered the same tag for both items. Please make sure your main tags are different.</string>
+    <string name="post_hotspot_missing_tag">Please enter both tags before posting your question.</string>
+
+    <!-- Voters -->
+    <string name="voters_title">Voters</string>
+    <string name="voters_alert_unavailable">We were unable to retrieve your information</string>
+
+    <!-- Profile -->
+    <string name="profile_title">My Account</string>
+    <string name="profile_update_my_account">UPDATE MY ACCOUNT</string>
+    <string name="profile_update_my_account_successful">Account information has been successfully updated</string>
+    <string name="profile_activity_title">Username</string>
+    <string name="profile_activity_status">Trendsetter</string>
+    <string name="profile_activity_country">KOREA</string>
+    <string name="profile_activity_alert_unavailable">We were unable to retrieve your information</string>
+
+    <!-- My Votes -->
+    <string name="my_votes_title">My Votes</string>
+
+    <!-- My Posts -->
+    <string name="my_posts_title">My Posts</string>
+
+    <!-- Favorite Posts -->
+    <string name="favorite_posts_title">Favorite Posts</string>
+
+    <!-- Favorite Tags -->
+    <string name="favorites_title">Favorite Tags</string>
+    <string name="favorites_alert_unavailable">We were unable to retrieve your information</string>
+
+    <!-- Following -->
+    <string name="following_title">Following</string>
+    <string name="following_alert_unavailable">We were unable to retrieve your information</string>
+
+    <!-- Followers -->
+    <string name="followers_title">Followers</string>
+    <string name="followers_alert_unavailable">We were unable to retrieve your information</string>
+
+    <!-- Ranking -->
+    <string name="ranking_title">Ranking</string>
+    <string name="ranking_my_ranking_text">MY RANKING</string>
+    <string name="ranking_leader_board_text">LEADERBOARD</string>
+    <string name="ranking_leader_board_daily">Daily</string>
+    <string name="ranking_leader_board_weekly">Weekly</string>
+    <string name="ranking_leader_board_all_time">All Time</string>
+    <string name="ranking_points">pts</string>
+    <string name="ranking_alert_unavailable">We were unable to retrieve your information</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_alert_unavailable">We were unable to retrieve your information</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">Notifications</string>
+    <string name="notifications_alert_unavailable">We were unable to retrieve your information</string>
+
+    <!-- Support -->
+    <string name="support_title">Support</string>
+    <string name="support_alert_unavailable">We were unable to retrieve your information</string>
+
+    <!-- Terms of Service / Privacy Policy -->
+    <string name="terms_of_service_text">Terms of Service</string>
+    <string name="privacy_policy_text">Privacy Policy</string>
+
+    <!-- Email -->
+    <string name="email" translatable="false">support@organicparking.com</string>
+    <string name="email_subject">Organic Parking Feedback</string>
+    <string name="email_no_client">There are no email clients installed. When you have access to an email client you can reach us at</string>
+
+    <!-- Filter -->
+    <string name="filter_everything">Everything</string>
+    <string name="filter_favorite_tags">Favorite Tags</string>
+    <string name="filter_following">Following</string>
+    <string name="filter_trending">Trending</string>
+    <string name="filter_tags">Tags</string>
+    <string name="filter_users">Users</string>
+    <string name="search_hint">Search</string>
+    <string name="search_alert_unavailable">We were unable to retrieve your information</string>
+</resources>

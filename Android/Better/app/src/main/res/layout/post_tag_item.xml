@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tagFrameLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:layout_marginRight="@dimen/activity_margin_half"
+    android:layout_marginEnd="@dimen/activity_margin_half"
+    android:layout_marginBottom="@dimen/activity_margin_half">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/post_tag_bg_34dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/hashTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_half"
+            android:layout_marginStart="@dimen/activity_margin_half"
+            android:text="#"
+            android:textColor="@color/color_gray_default"
+            android:textSize="@dimen/list_view_favorite_text_size"/>
+
+        <TextView
+            android:id="@+id/tagTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="wedding"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/list_view_favorite_text_size"/>
+
+        <ImageView
+            android:id="@+id/deleteImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/post_tag_x_13dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+</FrameLayout>

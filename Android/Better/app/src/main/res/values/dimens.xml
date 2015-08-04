@@ -1,0 +1,135 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Activity -->
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+    <dimen name="activity_margin_quarter">4dp</dimen>
+    <dimen name="activity_margin_double">32dp</dimen>
+    <dimen name="activity_padding">16dp</dimen>
+    <dimen name="activity_padding_half">8dp</dimen>
+    <dimen name="activity_padding_quarter">4dp</dimen>
+    <dimen name="activity_padding_double">32dp</dimen>
+
+    <!-- Button -->
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="button_text_size">16dp</dimen>
+
+    <!-- Text Edit -->
+    <dimen name="text_edit_height">48dp</dimen>
+
+    <!-- AlertDialog -->
+    <dimen name="alert_message_container_margin">24dp</dimen>
+    <dimen name="alert_button_container_height">48dp</dimen>
+    <dimen name="alert_button_height">36dp</dimen>
+    <dimen name="alert_title_text_size">21dp</dimen>
+    <dimen name="alert_message_text_size">16dp</dimen>
+    <dimen name="alert_button_text_size">14dp</dimen>
+
+    <!-- View Pager -->
+    <dimen name="view_pager_indicator_size">8dp</dimen>
+    <dimen name="view_pager_indicator_margin">4dp</dimen>
+
+    <!-- Card View -->
+    <dimen name="card_view_corner_radius">8dp</dimen>
+    <dimen name="card_view_profile_image_size">56dp</dimen>
+    <dimen name="card_view_max_tags_height">56dp</dimen>
+    <dimen name="card_view_tag_text_size">15dp</dimen>
+    <dimen name="card_view_username_text_size">12dp</dimen>
+    <dimen name="card_view_vote_text_size">14dp</dimen>
+    <dimen name="card_view_username_padding_left">72dp</dimen>
+
+    <!-- Top bar -->
+    <dimen name="top_bar_height">56dp</dimen>
+    <dimen name="top_bar_btn_width">72dp</dimen>
+    <dimen name="top_bar_btn_padding">16dp</dimen>
+    <dimen name="top_bar_text_size">20dp</dimen>
+
+    <!-- Intro -->
+    <dimen name="logo_width">131dp</dimen>
+    <dimen name="logo_height">75dp</dimen>
+    <dimen name="intro_back_height">208dp</dimen>
+    <dimen name="intro_title_height">48dp</dimen>
+    <dimen name="intro_title_margin_top">16dp</dimen>
+    <dimen name="intro_title_text_size">22dp</dimen>
+    <dimen name="intro_subtext_width">220dp</dimen>
+    <dimen name="intro_subtext_height">100dp</dimen>
+    <dimen name="intro_subtext_text_size">16dp</dimen>
+    <dimen name="intro_view_pager_indicator_size">8dp</dimen>
+    <dimen name="intro_margin_bottom">108dp</dimen>
+
+    <!-- New Account -->
+    <dimen name="gender_btn_size">125dp</dimen>
+    <dimen name="gender_btn_margin">10dp</dimen>
+    <dimen name="new_account_empty_text_size">14dp</dimen>
+    <dimen name="new_account_normal_text_size">16dp</dimen>
+    <dimen name="new_account_dob_text_size">7dp</dimen>
+    <dimen name="new_account_background_image_size">216dp</dimen>
+    <dimen name="new_account_profile_image_size">116dp</dimen> <!-- if this changes, must change PROFILE_DP in NewAccount -->
+    <dimen name="new_account_profile_border_margin">4dp</dimen>
+    <dimen name="new_account_icon_size">24dp</dimen>
+    <dimen name="new_account_icon_text_margin">24dp</dimen>
+    <dimen name="new_account_icon_top_bottom_margin">7dp</dimen>
+    <dimen name="new_account_visibility_btn_size">48dp</dimen>
+    <dimen name="new_account_profile_btn_margin">12dp</dimen>
+    <dimen name="new_account_spinner_margin">50dp</dimen>
+
+    <!-- Log In -->
+    <dimen name="log_in_logo_top_margin">81dp</dimen>
+    <dimen name="log_in_forgot_text_size">12dp</dimen>
+
+    <!-- Forgot Password -->
+    <dimen name="forgot_password_et_height">72dp</dimen>
+
+    <!-- Sign Up -->
+    <dimen name="sign_up_logo_top_margin">136dp</dimen>
+
+    <!-- Camera -->
+    <dimen name="camera_cancel_accept_photo_spacing">43dp</dimen>
+    <dimen name="camera_cancel_accept_padding">30dp</dimen>
+
+    <!-- Post -->
+    <dimen name="post_layout_spacing">10dp</dimen>
+    <dimen name="post_layout_padding">20dp</dimen>
+    <dimen name="post_hot_spot_text_view_width">200dp</dimen>
+    <dimen name="post_tagging_text_size">14dp</dimen>
+
+    <!-- Menu -->
+    <dimen name="nav_width">304dp</dimen>
+    <dimen name="action_button_size">56dp</dimen>
+    <dimen name="menu_button_height">56dp</dimen>
+    <dimen name="menu_text_size">18dp</dimen>
+
+    <!-- Profile -->
+    <dimen name="profile_settings_icon_size">30dp</dimen>
+
+    <!-- Profile Item -->
+    <dimen name="profile_item_text_size">15dp</dimen>
+
+    <!-- Lists -->
+    <dimen name="list_view_favorite_height">48dp</dimen>
+    <dimen name="list_view_favorite_text_size">15dp</dimen>
+    <dimen name="list_view_follow_height">56dp</dimen>
+    <dimen name="list_view_follow_icon_size">40dp</dimen>
+    <dimen name="list_view_follow_text_size">13dp</dimen>
+
+    <!-- Ranking -->
+    <dimen name="ranking_button_height">42dp</dimen>
+    <dimen name="ranking_leader_board_text_size">14dp</dimen>
+    <dimen name="ranking_status_spacing">3dp</dimen>
+    <dimen name="badge_title_text_size">14dp</dimen>
+    <dimen name="badge_status_text_size">12dp</dimen>
+
+    <dimen name="profile_item_icon_width">24dp</dimen>
+    <dimen name="profile_item_icon_height">24dp</dimen>
+    <dimen name="profile_item_icon_next_width">24dp</dimen>
+    <dimen name="profile_item_icon_next_height">24dp</dimen>
+    <dimen name="profile_item_layout_marginBottom">14dp</dimen>
+    <dimen name="profile_item_layout_marginTop">14dp</dimen>
+    <dimen name="profile_item_textSize">15dp</dimen>
+    <dimen name="profile_item_layout_marginRight">22dp</dimen>
+    <dimen name="profile_item_line_paddingLeft">8dp</dimen>
+    <dimen name="profile_item_line_paddingRight">8dp</dimen>
+</resources>

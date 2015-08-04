@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.astapley.thememe.better.CustomCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customCardView"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_margin_quarter">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_margin"
+            android:layout_marginLeft="@dimen/activity_margin_half"
+            android:layout_marginStart="@dimen/activity_margin_half"
+            android:baselineAligned="false">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImageView"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/card_view_profile_image_size"
+                android:layout_height="@dimen/card_view_profile_image_size"
+                android:layout_marginTop="@dimen/activity_margin_half"
+                android:layout_marginRight="@dimen/activity_margin"
+                android:layout_marginEnd="@dimen/activity_margin"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/clear_icon"
+                android:scaleType="centerCrop"
+                app:border_width="0dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tagsTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/activity_margin_half"
+                        android:maxHeight="@dimen/card_view_max_tags_height"
+                        android:text="#blackshadow #brownshadow"
+                        android:textSize="@dimen/card_view_tag_text_size"/>
+
+                    <ImageView
+                        android:id="@+id/menuImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_more_vert_grey600_24dp"
+                        android:paddingTop="@dimen/activity_padding_half"
+                        android:paddingLeft="@dimen/activity_padding"
+                        android:paddingRight="@dimen/activity_padding_quarter"
+                        android:paddingStart="@dimen/activity_padding_half"
+                        android:paddingEnd="@dimen/activity_padding_quarter"
+                        android:paddingBottom="@dimen/activity_padding_half"
+                        android:clickable="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_half"
+                    android:layout_marginBottom="@dimen/activity_margin_half">
+
+                    <TextView
+                        android:id="@+id/usernameTextView"
+                        android:gravity="center|start"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="USERNAMEHERE"
+                        android:textSize="@dimen/card_view_username_text_size"/>
+
+                    <TextView
+                        android:id="@+id/votesTextView"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/activity_margin_half"
+                        android:layout_marginEnd="@dimen/activity_margin_half"
+                        android:text="56"
+                        android:textSize="@dimen/card_view_vote_text_size"
+                        android:drawableLeft="@drawable/ic_myvote_check_grey_24dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_light_gray"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_light_gray">
+
+            <com.astapley.thememe.better.SquareLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                android:id="@+id/firstImageFrameLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <com.astapley.thememe.better.FadeInNetworkImageView
+                    android:id="@+id/firstImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/secondImageFrameLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <com.astapley.thememe.better.FadeInNetworkImageView
+                    android:id="@+id/secondImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/hotspotOneImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/global_hotspot_blank_96dp"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/hotspotTwoImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/global_hotspot_blank_96dp"
+                android:clickable="true"/>
+
+            <FrameLayout
+                android:id="@+id/hotspotOneFrameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.astapley.thememe.better.ProgressWheel
+                    android:id="@+id/hotspotOneCustomProgressWheel"
+                    android:layout_width="106dp"
+                    android:layout_height="106dp"
+                    wheel:matProg_fillRadius="true"
+                    wheel:matProg_barColor="@color/color_better"
+                    wheel:matProg_barWidth="9dp"
+                    wheel:matProg_linearProgress="true"
+                    wheel:matProg_reversed="true"
+                    wheel:matProg_spinSpeed="0.9"/>
+
+                <ImageView
+                    android:id="@+id/hotspotOneCheckImageView"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_margin"
+                    android:src="@drawable/ic_myvote_check_green_24dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/hotspotOneTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_margin_quarter"
+                        android:text="75"
+                        android:textColor="@color/color_better"
+                        android:textSize="26dp"/>
+
+                    <TextView
+                        android:id="@+id/hotspotOnePercentTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_margin_quarter"
+                        android:text="%"
+                        android:textColor="@color/color_better"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/hotspotTwoFrameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.astapley.thememe.better.ProgressWheel
+                    android:id="@+id/hotspotTwoCustomProgressWheel"
+                    android:layout_width="106dp"
+                    android:layout_height="106dp"
+                    wheel:matProg_fillRadius="true"
+                    wheel:matProg_barColor="@color/color_better"
+                    wheel:matProg_barWidth="9dp"
+                    wheel:matProg_linearProgress="true"
+                    wheel:matProg_reversed="false"
+                    wheel:matProg_spinSpeed="0.9"/>
+
+                <ImageView
+                    android:id="@+id/hotspotTwoCheckImageView"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_margin"
+                    android:src="@drawable/ic_myvote_check_green_24dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/hotspotTwoTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_margin_quarter"
+                        android:text="75"
+                        android:textColor="@color/color_better"
+                        android:textSize="26dp"/>
+
+                    <TextView
+                        android:id="@+id/hotspotTwoPercentTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_margin_quarter"
+                        android:text="%"
+                        android:textColor="@color/color_better"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</com.astapley.thememe.better.CustomCardView>

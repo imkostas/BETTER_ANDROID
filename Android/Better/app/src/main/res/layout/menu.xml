@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <FrameLayout
+        android:id="@+id/profileFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/new_account_background_image_size"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/backgroundProfileImageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/new_account_background_image_size"
+            android:scaleType="centerCrop"
+            android:src="@drawable/account_profile_panel_empty"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImageView"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center|start"
+            android:layout_width="@dimen/new_account_profile_image_size"
+            android:layout_height="@dimen/new_account_profile_image_size"
+            android:layout_marginLeft="@dimen/activity_margin"
+            android:layout_marginStart="@dimen/activity_margin"
+            android:src="@drawable/ic_cam_account_white_116dp"
+            android:background="@drawable/ic_cam_circle_account_116dp"
+            app:border_width="0dp"/>
+
+        <TextView
+            android:id="@+id/usernameTextView"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin"
+            android:text="USERNAMEHERE"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/new_account_empty_text_size"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="@dimen/activity_padding">
+
+        <TextView
+            android:id="@+id/rankingTextView"
+            android:gravity="center|start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_button_height"
+            android:text="My Ranking"
+            android:textSize="@dimen/menu_text_size"
+            android:textColor="@color/color_almost_black"
+            android:drawableLeft="@drawable/ic_ranking_grey_24dp"
+            android:drawableStart="@drawable/ic_ranking_grey_24dp"
+            android:drawablePadding="@dimen/activity_padding_double"
+            android:paddingLeft="@dimen/activity_padding"
+            android:paddingRight="@dimen/activity_padding"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/settingsTextView"
+            android:gravity="center|start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_button_height"
+            android:text="Settings"
+            android:textSize="@dimen/menu_text_size"
+            android:textColor="@color/color_almost_black"
+            android:drawableLeft="@drawable/ic_settings_grey600_24dp"
+            android:drawableStart="@drawable/ic_settings_grey600_24dp"
+            android:drawablePadding="@dimen/activity_padding_double"
+            android:paddingLeft="@dimen/activity_padding"
+            android:paddingRight="@dimen/activity_padding"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin"
+        android:src="@drawable/ic_better_crown_38dp"/>
+
+</LinearLayout>
