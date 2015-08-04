@@ -58,7 +58,7 @@ public class Filter extends Fragment implements View.OnClickListener {
     public static LinearLayout searchLinearLayout, searchTopBarLinearLayout;
     private ViewPager viewPager;
 
-    public Filter() {}
+    public Filter() {}  //
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
